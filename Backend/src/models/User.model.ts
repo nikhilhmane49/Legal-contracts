@@ -1,8 +1,8 @@
 
-import { model, Schema } from "mongoose";
+import { Document, model, Schema } from "mongoose";
 import mongoose from "mongoose";
 
-export interface IdUser{
+export interface IdUser extends Document {
     googleId: string,
     email: string,
     displayname: string,
